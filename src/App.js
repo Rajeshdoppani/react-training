@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 
-import ExpenseItems from './components/ExpenseItems';
+import Expenses from './components/Expenses';
 
 export default function App() {
   const expenses = [
@@ -28,7 +28,7 @@ export default function App() {
   return (
     <div>
       <h1>Lets get started...!</h1>
-      <ExpenseItems item={expenses}></ExpenseItems>
+      <Expenses items={expenses} />
     </div>
   );
 }

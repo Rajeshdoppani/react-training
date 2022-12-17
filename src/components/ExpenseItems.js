@@ -1,12 +1,13 @@
 import React from 'react';
+import './ExpenseItems.css';
 
-function ExpenseItems(prop) {
+function ExpenseItems(props) {
   return (
     <div className="expense-item">
-      <h2 className="expense-item__date">May 07 2022</h2>
-      <div className="">
-        <h2>Books</h2>
-        <p>$89.98</p>
+      <div className="expense-item__date">{props.date.toLocaleString()}</div>
+      <div className="expense-item__description">
+        <h2>{props.title}</h2>
+        <div className="expense-item__price">${props.amount}</div>
       </div>
     </div>
   );
