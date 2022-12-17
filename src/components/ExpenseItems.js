@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ExpenseItems() {
+function ExpenseItems(prop) {
   return (
     <div className="expense-item">
       <h2 className="expense-item__date">May 07 2022</h2>
